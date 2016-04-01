@@ -1,2 +1,55 @@
-h1
-  color: hotpink
+#header
+  height: 600px
+
+  .image
+    position: relative
+    height: 100%
+    top: -150px
+    background:
+      image: url(../images/header-image.jpeg)
+      size: 100%
+      repeat: no-repeat
+    filter: grayscale(100%)
+
+
+    .overlay
+      background-color: black
+      opacity: .5
+      position: relative
+      height: 100%
+      width: 100vw
+
+    .wrapper
+      position: absolute
+      top: 150px
+      z-index: 9999
+      color: white
+      text-align: center
+      margin-top: 70px
+      max-width: 550px
+      left: 50%
+      transform: translate(-50%)
+
+      h1
+        letter-spacing: 1px
+        margin-bottom: -10px
+        font:
+          weight: 900
+          size: 35px
+
+      hr
+        width: 70px
+        height: 4px
+        border: none
+        display: inline-block
+        background-color: white
+
+      p
+        margin-top: 25px
+        letter-spacing: 1px
+        line-height: 1.6
+        font-weight: 100
+
+      .arrow-down
+        margin-top: 80px
+        height: 30px
