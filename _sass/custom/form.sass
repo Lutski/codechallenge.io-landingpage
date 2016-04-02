@@ -1,0 +1,56 @@
+#form
+  //background: hotpink
+  max-width: 500px
+  margin: 0px auto
+
+  #mc_embed_signup
+
+    div.mc-field-group
+      input
+        position: relative
+        width: 100%
+        padding: 15px 0px
+        border: 3px solid #D6D4D4
+        border-radius: 5px
+        outline: none
+        font-size: 16px
+        background-color: #F3F3F3
+        padding-left: 5px
+
+      .email
+        margin-top: 15px
+
+    p.spam
+      font-size: 13px
+      color: #B1B0B0
+      text-align: center
+      margin: 25px 0px 10px 0px
+
+    input.button
+      position: relative
+      background-color: #F26565
+      color: white
+      border: none
+      padding: 10px 50px
+      border-radius: 5px
+      font-size: 16px
+      left: 50%
+      transform: translate(-50%)
+      cursor: pointer
+      transition: all 0.3s ease-in-out
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+
+      &:hover
+        background-color: #d95a5a
+
+
+@media(max-width: 700px)
+  #form
+    #mc_embed_signup
+      div.mc-field-group
+        input
+          width: 80%
+          left: 50%
+          transform: translate(-50%)
