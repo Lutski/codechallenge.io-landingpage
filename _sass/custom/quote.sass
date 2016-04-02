@@ -1,0 +1,35 @@
+$quote-bg: #F26565
+$quote-text: #E8D6D6
+
+#quote
+  background-color: $quote-bg
+  height: 250px
+  width: 100%
+  position: relative
+
+  .quote_wrapper
+    max-width: 600px
+    margin: 0px auto
+    position: relative
+    top: 30%
+    transform: translateY(-30%)
+
+    .quote-image
+      height: 150px
+      position: relative
+      right: 20px
+
+    .quote-text
+      position: absolute
+      color: $quote-text
+      text-align: center
+      font-size: 24px
+      top: 40%
+
+
+@media(max-width: 550px)
+  #quote
+    .quote_wrapper
+      .quote-image
+        left: 50%
+        transform: translate(-50%)
