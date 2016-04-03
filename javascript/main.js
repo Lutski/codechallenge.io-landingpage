@@ -1,5 +1,6 @@
 $(document).ready(function() {
   getDay();
+  smoothScroll(300);
 });
 
 function getDay() {
@@ -18,4 +19,20 @@ function getDay() {
 
   var getCurrentDay = weekDays[dayOfTheWeek];
   $('#footer h1 span').text(getCurrentDay);
+}
+
+
+// From Travis Neilson (Devtips)
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top - 50 // - 50 to make it scroll to where i want to
+	        }, duration);
+	    }
+	});
 }
